@@ -1,0 +1,125 @@
+1) Вошли в папку на локальном репозитории 
+   cd Git_36gr
+   cd Git_36gr
+   
+Проверим статус и какая у нас ветка
+   git status
+Терминал отабразит:
+  'origin/main' - главная ветка 
+На локальном репозитории сделаем ответвления (branches: 
+- Postman
+- Jmeter
+- CheckLists
+- Bag Reports
+- SQL
+- Charles
+- Mobile testing)
+  
+  git checkout -b Postman  - создали ветку "Postman_36gr" от главной "main" ветки и переместились в нее. "-b" значит создание новой ветки branch 
+  
+Чтобы создать другие ветки на главной "main" нужно перейти на главную ветку "main" 
+
+  git checkout main - перешли на "main" ветку
+  
+Далее создаем другие ветки на "main"
+  git branch Jmeter
+  
+  git branch CheckLists
+ 
+  git branch BugReports
+
+  git branch SQL
+  
+  git branch Charles
+  
+  git branch MobileTesting
+  
+  git branch main
+                   - убедились, что мы на главной ветки и создали другие ветки на главной
+
+2) git push origin BugReports Charles CheckLists Jmeter MobileTesting Postman SQL 
+                   - запушили все созданные ветки из локального репозитория в удаленный. 
+                     В удаленном репозитории "portfolio" отображаются 7 новых branches.
+
+3) git checkout BugReports - перешли с главной ветки в "BugReports"
+   cat > BugReport_structure.txt 
+Bug Report:
+Defect ID:
+Project:
+Issue Type:
+Reporter:
+Affects version:
+Created by:
+Assignee:
+Fix Version:
+Component:
+Status:
+Severity:
+Priority:
+Summary:
+Description:
+Preconditions:
+Steps to Reproduce:
+Expected Result:
+Actual Result:
+Issue Links (Link to requirements):
+Link to test-case:
+Environment:
+Attachment:
+Browser:
+Operation system:
+Device:
+Sprint:
+Additional Information:
+
+control+c
+         - создали текстовый файлик со структурой баг репорта в ветке "BugReports"
+
+4) git add BugReports_stucture.txt - добавляем файлик в ветку "BugReports"
+   git commit -m "bug report structure" - делаем новый первый commit на ветке "BugReports"
+   git push - перенесли созданный файлик на локальном репозитории в удаленный на ветку "BugReports"
+
+5) git checkout main - перешли в главную ветку с ветки "BugReports" чтобы вмержить (влить ветку с изменениями) ее в "main"
+   git merge BugReports - провезвели слияние ветки "BugReports" с изменениями в векту "main"
+
+6) git push  - запушили "main" ветку на внешний репозиторий
+
+7) git checkout CheckLists - перешли с главной ветки в "CheckLists"
+   vim CheckLists_structure.txt
+   "I"
+Name product/link to be tested:
+Browser&version: 
+Platform&version:
+Test result:Passed/Failed
+Notes/Bug ID
+   Создали образец чек листа 
+   ESC ":" wq
+               - создали и сохранили образец чек листа
+
+8) git add CheckLists_structure.txt 
+   git commit -m "check list structure"
+   git push
+            - добавили изменения (образец чек листа) на ветке "CheckLists" и отобразили ее так же на удаленном репозитории
+
+9) В удаленном репозитории в ветке "CheckLists" в файлике "CheckLists_structure.txt" внесли изменения 
+   В файле в строке "Test result:" добавили новые результаты проверок
+   Сохранили и добавили комментарий
+   Перешли на "Git_36gr" репозиторий 
+   Кнопка "Compare & pull request" 
+   Продублировали комментарий 
+   Подтвердить "Pull request" & "Merge pull request" - отправили запрос на предложенное изменение в файле "CheckLists_structure.txt" ветки "CheckLists" и слили изменения этой ветки в главную ветку
+   Для проверки что мы внесли изменения - перейти на главную ветку в репозитории. Должен отображаться файл с внесенными изменениями. 
+
+10) git checkout main 
+    git pull - синхронизировали внешнюю и локальные ветки "main" 
+
+
+   
+ 
+
+   
+
+
+
+
+
