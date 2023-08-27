@@ -1,0 +1,419 @@
+
+JSON
+
+• Создать внешний репозиторий c названием JSON
+
+  JSON (name your new repository...)
+  "Public" checkbox
+  "Create a new repository" button 
+
+• Клонировать репозиторий JSON на локальный компьютер
+
+  Create on PC "JSON" folder
+  Open terminal 
+  Apply commands: cd JSON
+                  git clone https://link_JSON_reposiroty_on_GitHub
+
+• Внутри локального JSON создать файл “new.json”
+
+  cd JSON
+  vim new.json
+   I
+   {
+    "name": "Marho",
+    "email": "test1@gmail.com",
+    "password": "testqa123"
+   }
+  Esc : wq
+
+• Добавить файл под гит 
+
+  git add new.json
+
+• Закоммитить файл
+
+  git commit -m "json file is added"
+
+• Отправить файл на внешний GitHub репозиторий
+
+  git push 
+
+• Отредактировать содержание файла “new.json” - написать информацию о себе (ФИО, возраст, количество домашних животных, будущая желаемая зарплата). Всё написать в формате JSON
+
+   vim new.json
+   I
+   {
+    "Full name": "Sysoieva Marharyta Valerievna",
+    "Age": "26",
+    "Pets" "2",
+    "Expected Salary": "$1000"
+    }
+   Esc : wq
+
+• Отправить изменения на внешний репозиторий
+
+  git commit -am "update"
+  git push
+
+• Создать файл preferences.json
+  
+  touch preferences.json
+
+• В файл preferences.json добавить информацию о своих предпочтениях (Любимый фильм, любимый сериал, любимая еда, любимое время года, сторона которую хотели бы посетить) в формате JSON
+   
+  vim preferences.json
+   I
+   {
+    "Favorite movie": "Dark knight",
+    "Favorite series": "Stranger things",
+    "Favorite food": "Sushi, pizza, cheesecake",
+    "Favorite season": "spring",
+    "Dream country to visit": "Switzerland, Austria"
+    }
+   Esc : wq
+
+• Создать файл skills.json добавить информацию о скиллах которые будут изучены на курсе в формате JSON
+
+  vim skills.json
+   I
+   {
+    "Significant skills are done": [
+                                    "Hands-on experience with json format",
+                                    "Structure and understanding of applying json format"
+                                   ]
+   }
+   Esc : wq
+
+• Отправить сразу 2 файла на внешний репозиторий
+
+  git add preferences.json skills.json
+  git commit -m "2 new files are added"
+  git push
+ 
+• На веб интерфейсе создать файл bug_report.json
+
+  Open "JSON" repository 
+  The "Add new file" dropdown
+  Select the "Create new file" in the dropdown
+  Type "bug_report.json" file name in "JSON" repository
+
+• Сделать Commit changes (сохранить) изменения на веб интерфейсе
+
+  Confirm the "Commit changes" in repository 
+
+• На веб интерфейсе модифицировать файл bug_report.json, добавить баг репорт в формате JSON
+
+ The "Edit this file" button 
+ (Eg): Add bug report structure in json format 
+
+{ 
+ "bug report structure": [
+                          {
+                           "ID": "#",
+                           "Bild or module": "#",
+                           "Severity": "Blocked/Critical/Major/Minor/Trivial",
+                           "Priority": "High/Medium/Low",
+                           "Date Submitted": "date time",
+                           "Last updated": "date time",
+                           "Reporter": "Name Surname",
+                           "Assigned to": "Name Surname",
+                           "Status": "New/Open/Fixed/Duplicate/Verified/Reopened/Closed/Rejected/Deferred/Not a bug",
+                           "Environment": [ 
+                                      {
+                                       "Platform": "Browser&version",
+                                       "OS&version": "Windows/Linux/Mac or etc.",
+                                       "Device": "desktop/mobile"
+                                       }
+                                        ],
+                           "Summary": "Expound the detected error",
+                           "Description": "Describe the detected error",
+                           "STR": "Type Type a sequence of steps to reproduce the error",
+                           "Expected result": "Type the expected product result",
+                           "Actual result": "Type the actual product result",
+                           "Attached files": "Attach files with error to bug report",
+                           "Edition information": "Type edition information if it is required"
+                          } 
+                         ] 
+ }
+
+• Сделать Commit changes (сохранить) изменения на веб интерфейсе
+
+  Confirm the "Commit changes" in repository 
+
+• Синхронизировать внешний и локальный репозиторий JSON
+  
+ Apply "git pull" command in terminal
+
+
+
+XML
+
+• Создать внешний репозиторий c названием XML
+
+  XML (name your new repository...)
+  "Public" checkbox
+  "Create a new repository" button 
+
+• Клонировать репозиторий XML на локальный компьютер
+
+  Create on PC "XML" folder
+  Open terminal 
+  Apply commands: cd XML
+                  git clone https://link_XML_reposiroty_on_GitHub
+
+• Внутри локального XML создать файл “new.xml”
+  
+  touch new.xml
+
+• Добавить файл под гит 
+
+  git add new.xml
+
+• Закоммитить файл
+
+  git commit -m "xml file is added"
+
+• Отправить файл на внешний GitHub репозиторий
+
+  git push 
+
+• Отредактировать содержание файла “new.xml” - написать информацию о себе (ФИО, возраст, количество домашних животных, будущая желаемая зарплата). Всё написать в формате XML
+
+  vim new.xml
+  I 
+
+  <?xml version="1.0" encoding="utf-8"?>
+  <person>
+         <FullName>Sysoieva Mahraryta Valerievna</FullName>
+         <age>26</age>
+         <pets>cat &amp; dog</pets>
+         <expectedSalary>500 &gt;</expectedSalary>
+  </person>
+
+  Esc : wq
+
+• Отправить изменения на внешний репозиторий
+
+  git commit -am "update"
+  git push
+
+• Создать файл preferences.xml
+  
+  touch preferences.xml
+
+• В файл preferences.xml добавить информацию о своих предпочтениях (Любимый фильм, любимый сериал, любимая еда, любимое время года, сторона которую хотели бы посетить) в формате XML
+   
+  vim preferences.xml
+   I
+<?xml version="1.0" encoding="utf-8"?>
+<preferences>
+	<Favorite name ="Movie">Dark knight</Favorite>
+	<Favorite name="Series">Stranger things</Favorite>
+	<Favorite name="Food">Sushi&amp;pizza&amp;cheesecake</Favorite>
+	<Favorite name="Season">Spring</Favorite>
+	<DreamCountryToVisit>Switzerland&amp;Austia</DreamCountryToVisit>
+</preferences>
+     
+   Esc : wq
+
+• Создать файл skills.xml добавить информацию о скиллах которые будут изучены на курсе в формате XML
+
+  vim skills.xml
+   I
+
+<?xml version="1.0" encoding="utf-8"?>
+<skills>
+    <SignificantSkillsAreDone>Hands-on experience with xml format&amp;structure&amp;understanding of applying xml format</SignificantSkillsAreDone>
+</skills>
+
+   Esc : wq
+
+• Сделать коммит в одну строку
+
+git add . &&  git commit -m "2 files are added"
+
+• Отправить сразу 2 файла на внешний репозиторий
+  
+  git push
+
+• На веб интерфейсе создать файл bug_report.xml
+
+  Open "XML" repository 
+  The "Add new file" dropdown
+  Select the "Create new file" in the dropdown
+  Type "bug_report.xml" file name in "XML" repository
+
+
+• Сделать Commit changes (сохранить) изменения на веб интерфейсе
+
+  Confirm the "Commit changes" in repository 
+
+• На веб интерфейсе модифицировать файл bug_report.xml, добавить баг репорт в формате xml
+
+ The "Edit this file" button 
+ (Eg): Add bug report structure in xml format 
+
+<?xml version="1.0" encoding="utf-8" ?>
+<root>
+    <BugReporStructure>
+        <ID>#</ID>
+        <BildOrModule>#</BildOrModule>
+        <Severity>Blocked/Critical/Major/Minor/Trivial</Severity>
+        <Priority>High/Medium/Low</Priority>
+        <DateSubmitted>date time</DateSubmitted>
+        <LastUpdated>date time</LastUpdated>
+        <Reporter>Name Surname</Reporter>
+        <AssignedTo>Name Surname</AssignedTo>
+        <Status>New/Open/Fixed/Duplicate/Verified/Reopened/Closed/Rejected/Deferred/Not a bug</Status>
+        <Environment>
+            <Platform>Browser&version</Platform>
+            <OSAndVersion>Windows/Linux/Mac or etc.</OSAndVersion>
+            <Device>desktop/mobile</Device>
+        </Environment>
+        <Summary>Expound the detected error</Summary>
+        <Description>Describe the detected error</Description>
+        <STR>Type Type a sequence of steps to reproduce the error</STR>
+        <ExpectedResult>Type the expected product result</ExpectedResult>
+        <ActualResult>Type the actual product result</ActualResult>
+        <AttachedRiles>Attach files with error to bug report</AttachedRiles>
+        <EditionInformation>Type edition information if it is required</EditionInformation>
+    </BugReporStructure>
+</root>
+
+• Сделать Commit changes (сохранить) изменения на веб интерфейсе
+
+  Confirm the "Commit changes" in repository 
+
+• Синхронизировать внешний и локальный репозиторий XML
+  
+ Apply "git pull" command in terminal
+
+
+
+TXT
+
+• Создать внешний репозиторий c названием TXT
+
+  TXT (name your new repository...)
+  "Public" checkbox
+  "Create a new repository" button 
+
+• Клонировать репозиторий TXT на локальный компьютер
+
+  Create on PC "TXT" folder
+  Open terminal 
+  Apply commands: cd TXT
+                  git clone https://link_TXT_reposiroty_on_GitHub
+
+• Внутри локального TXT создать файл “new.txt”
+
+  cd TXT
+  touch new.txt
+
+• Добавить файл под гит 
+
+  git add new.txt
+
+• Закоммитить файл
+
+  git commit -m "txt file is added"
+
+• Отправить файл на внешний GitHub репозиторий
+
+  git push 
+
+• Отредактировать содержание файла “new.txt” - написать информацию о себе (ФИО, возраст, количество домашних животных, будущая желаемая зарплата). Всё написать в формате TXT
+
+   vim new.txt
+   I
+  
+    Full name - Sysoieva Marharyta Valerievna, age - 26, pets - 2, expected salary - $1000
+  
+   Esc : wq
+
+• Отправить изменения на внешний репозиторий
+
+  git commit -am "update"
+  git push
+
+• Создать файл preferences.txt
+  
+  touch preferences.txt
+
+• В файл preferences.txt добавить информацию о своих предпочтениях (Любимый фильм, любимый сериал, любимая еда, любимое время года, сторона которую хотели бы посетить) в формате txt
+   
+  vim preferences.txt
+   I
+   
+    Favorite movie - "Dark knigh", favorite series - "Stranger things", favorite food - sushi, pizza, cheesecake, favorite season - spring, dream country to visit - Switzerland, Austria
+    
+   Esc : wq
+
+• Создать файл skills.txt добавить информацию о скиллах которые будут изучены на курсе в формате txt
+
+  vim skills.txt
+   I
+   Significant skills are done: 1. Hands-on experience with txt format;
+                                2. Structure and understanding of applying txt format.
+
+   Esc : wq
+
+• Сделать коммит в одну строку
+
+git add . &&  git commit -m "2 files are added"
+
+• Отправить сразу 2 файла на внешний репозиторий
+  
+  git push
+ 
+• На веб интерфейсе создать файл bug_report.txt
+
+  Open "TXT" repository 
+  The "Add new file" dropdown
+  Select the "Create new file" in the dropdown
+  Type "bug_report.txt" file name in "TXT" repository
+
+• Сделать Commit changes (сохранить) изменения на веб интерфейсе
+
+  Confirm the "Commit changes" in repository 
+
+• На веб интерфейсе модифицировать файл bug_report.txt, добавить баг репорт в формате txt
+
+ The "Edit this file" button 
+ (Eg): Add bug report structure in txt format 
+
+bug report structure
+ID #
+Bild or module #
+Severity Blocked/Critical/Major/Minor/Trivial
+Priority High/Medium/Low
+Date Submitted date time
+Last updated date time
+Reporter Name Surname
+Assigned to Name Surname
+Status New/Open/Fixed/Duplicate/Verified/Reopened/Closed/Rejected/Deferred/Not a bug
+Environment
+Platform Browser&version
+OS&version Windows/Linux/Mac or etc.
+Device desktop/mobile
+Summary Expound the detected error
+Description Describe the detected error
+STR Type Type a sequence of steps to reproduce the error
+Expected result Type the expected product result
+Actual result Type the actual product result
+Attached files Attach files with error to bug report
+Edition information Type edition information if it is required
+
+
+• Сделать Commit changes (сохранить) изменения на веб интерфейсе
+
+  Confirm the "Commit changes" in repository 
+
+• Синхронизировать внешний и локальный репозиторий TXT
+  
+  Apply "git pull" command in terminal
+
+
+
+./*
+ 
